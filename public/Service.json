@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/PZGczTj/p1.jpg",
+      "title": "Sunset View Luxury Hotel",
+      "description": "Nestled in the heart of Dhaka, the Sunset View offers an escape into luxury with panoramic city views, world-class amenities, and personalized services designed for the discerning traveler.",
+      "price": "150",
+      "location": "Dhaka, Bangladesh",
+      "booking_status": "Available",
+      "facility": ["Spa", "Infinity Pool", "Rooftop Dining", "24/7 Room Service"],
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/h8KvPmV/p2.jpg",
+      "title": "Beachside Bungalow Resort",
+      "description": "Step into a world of tranquility and serene beauty at our Beachside Bungalow Resort, located on the pristine beaches of Cox's Bazar. Experience the perfect blend of nature and luxury.",
+      "price": "120",
+      "location": "Cox's Bazar, Bangladesh",
+      "booking_status": "Booked",
+      "facility": ["Private Beach", "Sea View Balconies", "Outdoor Pool", "Guided Tours"],
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/3WkYxxM/p3.jpg",
+      "title": "Heritage Guesthouse",
+      "description": "Discover the charm of Bangladeshi hospitality in our Heritage Guesthouse. Located in the historic district of Sylhet, this cozy retreat offers an intimate glimpse into the local culture and traditions.",
+      "price": "80",
+      "location": "Sylhet, Bangladesh",
+      "booking_status": "Available",
+      "facility": ["Cultural Tours", "Local Cuisine", "Garden", "Free Wi-Fi"],
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/3M4xJtJ/p4.png",
+      "title": "Gourmet Paradise Restaurant",
+      "description": "A culinary journey through the flavors of Bangladesh awaits at Gourmet Paradise. Our chefs specialize in traditional and contemporary dishes that will tantalize your taste buds.",
+      "price": "50",
+      "location": "Chittagong, Bangladesh",
+      "booking_status": "Available",
+      "facility": ["Live Kitchen", "Private Dining", "Vegan Options", "Seafood Specialties"],
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/HB8bvMP/p5.jpg",
+      "title": "Skyline Bistro",
+      "description": "Elevate your dining experience at Skyline Bistro, where the skyline of Dhaka meets culinary excellence. Enjoy our selection of international dishes with a local twist.",
+      "price": "60",
+      "location": "Dhaka, Bangladesh",
+      "booking_status": "Booked",
+      "facility": ["Rooftop Seating", "Cocktail Bar", "Weekend Brunch", "Live Music"],
+      "rating": 4.6
+    }
+  ]
+  

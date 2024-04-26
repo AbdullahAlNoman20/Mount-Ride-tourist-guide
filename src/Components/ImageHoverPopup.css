@@ -1,0 +1,28 @@
+.image-container {
+    position: relative;
+    display: inline-block; /* Use inline-block or block depending on your layout */
+  }
+  
+  .image-container img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust height based on your preference */
+  }
+  
+  .popup {
+    position: absolute;
+    bottom: -100%; /* Adjust this to control the popup position */
+    left: 50%; /* Center the popup */
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: none; 
+    z-index: 10;/* Initially hide the popup */
+  }
+  
+  .image-container:hover .popup {
+    display: block;
+  }
+  
