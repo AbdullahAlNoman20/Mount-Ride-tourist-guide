@@ -1,37 +1,66 @@
-
-
+import Swal from "sweetalert2";
 
 const AddTouristSpot = () => {
+  const handleAddSpot = (e) => {
+    e.preventDefault();
 
+    const form = e.target;
 
-	const handleAddSpot = e => {
-		e.preventDefault();
+    const name = form.name.value;
+    const email = form.email.value;
+    const spot = form.spot.value;
+    const photo = form.photo.value;
+    const country = form.country.value;
+    const location = form.location.value;
+    const description = form.description.value;
+    const cost = form.cost.value;
+    const season = form.season.value;
+    const time = form.time.value;
+    const visitor = form.visitor.value;
 
-		const form = e.target;
+    const newSpot = {
+      name,
+      email,
+      spot,
+      photo,
+      country,
+      location,
+      description,
+      cost,
+      season,
+      time,
+      visitor,
+    };
+    console.log(newSpot);
 
-		const name = form.name.value;
-		const email = form.email.value;
-		const spot = form.spot.value;
-		const photo = form.photo.value;
-		const country = form.country.value;
-		const location = form.location.value;
-		const description = form.description.value;
-		const cost = form.cost.value;
-		const season = form.season.value;
-		const time = form.time.value;
-		const visitor = form.visitor.value;
-		
-	
-		const newSpot = {name,email,spot,photo,country,location,description,cost,season,time,visitor}
-		console.log(newSpot)
-	}
+    // Send Data to the server
 
+    fetch("http://127.0.0.1:5000/spot", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newSpot),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "success!",
+            text: "User Added successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+        }
+      });
+  };
 
   return (
     <div>
       <section className="p-6 bg-yellow-800 text-black">
         <form
-		onSubmit={handleAddSpot}
+          onSubmit={handleAddSpot}
           noValidate=""
           action=""
           className="container flex flex-col mx-auto space-y-12 text-black"
@@ -47,7 +76,7 @@ const AddTouristSpot = () => {
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black">
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">
-                  Your Name 
+                  Your Name
                 </label>
                 <input
                   name="name"
@@ -58,7 +87,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">
-                  Your Email 
+                  Your Email
                 </label>
                 <input
                   name="email"
@@ -69,7 +98,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">
-                  Spot Name 
+                  Spot Name
                 </label>
                 <input
                   name="spot"
@@ -80,7 +109,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="lastname" className="text-sm">
-                  Photo URL 
+                  Photo URL
                 </label>
                 <input
                   name="photo"
@@ -91,7 +120,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="lastname" className="text-sm">
-                  Country Name 
+                  Country Name
                 </label>
                 <input
                   name="country"
@@ -102,7 +131,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="lastname" className="text-sm">
-                  Location 
+                  Location
                 </label>
                 <input
                   name="location"
@@ -111,7 +140,7 @@ const AddTouristSpot = () => {
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
               </div>
-              
+
               <div className="col-span-full">
                 <label htmlFor="address" className="text-sm">
                   Short Description
@@ -119,13 +148,13 @@ const AddTouristSpot = () => {
                 <input
                   name="description"
                   type="text"
-                  placeholder="Description" 
+                  placeholder="Description"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label htmlFor="city" className="text-sm">
-				Average Cost
+                  Average Cost
                 </label>
                 <input
                   name="cost"
@@ -136,7 +165,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label htmlFor="state" className="text-sm">
-				Season
+                  Season
                 </label>
                 <input
                   name="season"
@@ -147,7 +176,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label htmlFor="zip" className="text-sm">
-				Travel Time
+                  Travel Time
                 </label>
                 <input
                   name="time"
@@ -158,7 +187,7 @@ const AddTouristSpot = () => {
               </div>
               <div className="col-span-full sm:col-span-2">
                 <label htmlFor="zip" className="text-sm">
-				Tota Visitors Per Year
+                  Tota Visitors Per Year
                 </label>
                 <input
                   name="visitor"
@@ -168,11 +197,14 @@ const AddTouristSpot = () => {
                 />
               </div>
               <div className="col-span-full sm:col-span-2 mt-4">
-				<input type="submit" value="Add Spot" className="btn btn-block btn-outline" />
+                <input
+                  type="submit"
+                  value="Add Spot"
+                  className="btn btn-block btn-outline"
+                />
               </div>
             </div>
           </fieldset>
-          
         </form>
       </section>
     </div>
