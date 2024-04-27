@@ -68,7 +68,7 @@ const router = createBrowserRouter([
         loader: ()=>fetch('http://127.0.0.1:5000/spot')
       },
       {
-        path: 'updateSpot/:id',
+        path: '/myList/updateSpot/:id',
         element: <UpdateSpot></UpdateSpot>,
         loader: ({params}) => fetch(`http://127.0.0.1:5000/spot/${params.id}`)
       }

@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
-const SpotCard = ({ spot }) => {
+const SpotCard = ({ spot,setSpots,spots }) => {
   const { _id, name, photo, country, location, description, cost, time } = spot;
 
   const handleDelete = (_id) => {
@@ -28,6 +28,8 @@ const SpotCard = ({ spot }) => {
                 text: "Your Spot has been deleted.",
                 icon: "success",
               });
+              const remaining = spots.filter(spt => spt._id !==_id)
+              setSpots(remaining);
             }
           });
       }
