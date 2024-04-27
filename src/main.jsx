@@ -64,6 +64,7 @@ const router = createBrowserRouter([
       {
         path: "/myList",
         element: <ProtectedRoute><MyList></MyList></ProtectedRoute>,
+        loader: ()=>fetch('http://127.0.0.1:5000/spot')
       }
     ],
   },

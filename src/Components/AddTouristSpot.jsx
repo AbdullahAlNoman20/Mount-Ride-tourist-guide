@@ -8,7 +8,7 @@ const AddTouristSpot = () => {
 
     const name = form.name.value;
     const email = form.email.value;
-    const spot = form.spot.value;
+    const spotName = form.spotName.value;
     const photo = form.photo.value;
     const country = form.country.value;
     const location = form.location.value;
@@ -21,7 +21,7 @@ const AddTouristSpot = () => {
     const newSpot = {
       name,
       email,
-      spot,
+      spotName,
       photo,
       country,
       location,
@@ -81,6 +81,7 @@ const AddTouristSpot = () => {
                 <input
                   name="name"
                   type="text"
+                  required
                   placeholder="Abdullah Al Noman"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-600 border-gray-300"
                 />
@@ -92,6 +93,7 @@ const AddTouristSpot = () => {
                 <input
                   name="email"
                   type="email"
+                  required
                   placeholder="Sundarban"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-600 border-gray-300"
                 />
@@ -101,8 +103,9 @@ const AddTouristSpot = () => {
                   Spot Name
                 </label>
                 <input
-                  name="spot"
+                  name="spotName"
                   type="text"
+                  required
                   placeholder="Sundarban"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -114,6 +117,7 @@ const AddTouristSpot = () => {
                 <input
                   name="photo"
                   type="text"
+                  required
                   placeholder="http//"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -125,6 +129,7 @@ const AddTouristSpot = () => {
                 <input
                   name="country"
                   type="text"
+                  required
                   placeholder="Bangladesh"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -136,6 +141,7 @@ const AddTouristSpot = () => {
                 <input
                   name="location"
                   type="text"
+                  required
                   placeholder="Khulna"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -148,6 +154,7 @@ const AddTouristSpot = () => {
                 <input
                   name="description"
                   type="text"
+                  required
                   placeholder="Description"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -159,6 +166,7 @@ const AddTouristSpot = () => {
                 <input
                   name="cost"
                   type="text"
+                  required
                   placeholder=" Average Cost"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -170,6 +178,7 @@ const AddTouristSpot = () => {
                 <input
                   name="season"
                   type="text"
+                  required
                   placeholder="Summer"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -181,6 +190,7 @@ const AddTouristSpot = () => {
                 <input
                   name="time"
                   type="text"
+                  required
                   placeholder="3 Days"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
@@ -192,6 +202,7 @@ const AddTouristSpot = () => {
                 <input
                   name="visitor"
                   type="text"
+                  required
                   placeholder="2000"
                   className="border p-2 w-full rounded-md focus:ring focus:ring-opacity-75  focus:ring-violet-600 border-gray-300"
                 />
