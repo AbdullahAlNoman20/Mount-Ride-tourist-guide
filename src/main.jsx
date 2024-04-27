@@ -25,6 +25,7 @@ import Profile from "./Components/Profile";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import AddTouristSpot from './Components/AddTouristSpot';
 import MyList from './Components/MyList';
+import UpdateSpot from './Components/UpdateSpot';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,11 @@ const router = createBrowserRouter([
         path: "/myList",
         element: <ProtectedRoute><MyList></MyList></ProtectedRoute>,
         loader: ()=>fetch('http://127.0.0.1:5000/spot')
+      },
+      {
+        path: 'updateSpot/:id',
+        element: <UpdateSpot></UpdateSpot>,
+        loader: ({params}) => fetch(`http://127.0.0.1:5000/spot/${params.id}`)
       }
     ],
   },
