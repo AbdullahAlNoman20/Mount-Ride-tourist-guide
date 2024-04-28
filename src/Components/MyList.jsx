@@ -35,6 +35,13 @@ const MyList = () => {
           ></SpotCard>
         ))}
       </div>
+
+     
+
+
+
+
+
     </div>
   );
 };

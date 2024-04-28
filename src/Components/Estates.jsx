@@ -1,9 +1,11 @@
 import "animate.css";
-import { useEffect, useState } from "react";
-import Service from "./Service";
 import Countries from "./Countries";
+import Service from "./Service";
 
 const Estates = () => {
+
+
+
   return (
     <div className="bg-yellow-800 text-white lg:p-5 pb-5">
       <div className="flex justify-center items-center flex-col p-14">
@@ -22,7 +24,9 @@ const Estates = () => {
           memories with Mount Ride—where every journey is epic!
         </p>
       </div>
-      <div className="">Data is Coming From Database</div>
+      <div className="">
+        <Service></Service>
+      </div>
 
       {/* Extra Section 1 */}
       <div className="mt-5">

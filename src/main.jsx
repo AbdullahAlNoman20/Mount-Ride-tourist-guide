@@ -49,11 +49,11 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      {
-        path: "/details/:id",
-        element: <ProtectedRoute><Details></Details></ProtectedRoute>,
-        loader: () => fetch("../Service.json")
-      },
+      // {
+      //   path: "/details/:id",
+      //   element: <ProtectedRoute><Details></Details></ProtectedRoute>,
+      //   loader: () => fetch("../Service.json")
+      // },
       {
         path: "/updateProfile",
         element: <ProtectedRoute><Profile></Profile></ProtectedRoute>,

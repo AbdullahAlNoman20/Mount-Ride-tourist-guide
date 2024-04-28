@@ -3,7 +3,7 @@
         "id": 1,
         "countryName": "Thailand",
         "spotName": "The Grand Palace",
-        "img": "https://example.com/images/grand-palace.jpg",
+        "img": "https://i.ibb.co/nLQG6jY/1.jpg",
         "description": "Located in the heart of Bangkok, the Grand Palace is a complex of buildings at the heart of the city. The palace has been the official residence of the Kings of Siam (and later Thailand) since 1782. The grand architecture and intricate details are a symbol of creativity and craftsmanship.",
         "cost": "15 USD for foreign visitors",
         "time": "November to February"
@@ -12,7 +12,7 @@
         "id": 2,
         "countryName": "Vietnam",
         "spotName": "Ha Long Bay",
-        "img": "https://example.com/images/ha-long-bay.jpg",
+        "img": "https://i.ibb.co/sV7hRVH/2.jpg",
         "description": "Known for its emerald waters and thousands of towering limestone islands topped with rainforests, Ha Long Bay is a UNESCO World Heritage site and a popular travel destination in Northern Vietnam.",
         "cost": "50 USD for a cruise",
         "time": "October to April"
@@ -21,7 +21,7 @@
         "id": 3,
         "countryName": "South Korea",
         "spotName": "Gyeongbokgung Palace",
-        "img": "https://example.com/images/gyeongbokgung.jpg",
+        "img": "https://i.ibb.co/jkFFHJM/3.jpg",
         "description": "Gyeongbokgung Palace was the main royal palace of the Joseon dynasty. Built in 1395, it is located in northern Seoul, South Korea. Today, it is regarded as the largest of the Five Grand Palaces built by the Joseon dynasty, and stands as a testament to the architectural practices and landscaping of traditional Korean palatial architecture.",
         "cost": "3 USD for adults",
         "time": "March to May, September to November"
@@ -30,7 +30,7 @@
         "id": 4,
         "countryName": "Philippines",
         "spotName": "Chocolate Hills",
-        "img": "https://example.com/images/chocolate-hills.jpg",
+        "img": "https://i.ibb.co/PFFLrrM/4.jpg",
         "description": "The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills but there may be as many as 1,776 hills spread over an area of more than 50 square kilometers. They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name.",
         "cost": "2 USD for viewing deck access",
         "time": "December to May"
@@ -39,7 +39,7 @@
         "id": 5,
         "countryName": "Nepal",
         "spotName": "Mount Everest",
-        "img": "https://example.com/images/mount-everest.jpg",
+        "img": "https://i.ibb.co/dmYWQZx/5.jpg",
         "description": "Mount Everest, part of the Himalaya range in Asia, is the highest mountain above sea level. Located in the Mahalangur Himal sub-range of the Himalayas, the international border between China and Nepal runs across its summit point.",
         "cost": "Varies widely, approximately 30,000 to 45,000 USD for a guided climb",
         "time": "April to May"
@@ -48,7 +48,7 @@
         "id": 6,
         "countryName": "Sri Lanka",
         "spotName": "Sigiriya Rock Fortress",
-        "img": "https://example.com/images/sigiriya-rock.jpg",
+        "img": "https://i.ibb.co/zfP2WSP/6.jpg",
         "description": "Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. The site was selected by King Kasyapa (477–495 CE) for his new capital. It features a massive column of rock nearly 200 meters high.",
         "cost": "30 USD for foreign adults",
         "time": "January to April, August to September"

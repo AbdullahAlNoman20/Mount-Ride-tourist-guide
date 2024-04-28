@@ -3,7 +3,7 @@
       "id": 1,
       "spotName": "Taj Mahal",
       "country": "India",
-      "img": "https://example.com/images/taj-mahal.jpg",
+      "img": "https://i.ibb.co/T0cpcV0/7.jpg",
       "description": "An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.",
       "cost": "25 USD for foreigners",
       "time": "October to March"
@@ -12,7 +12,7 @@
       "id": 2,
       "spotName": "Great Wall of China",
       "country": "China",
-      "img": "https://example.com/images/great-wall-of-china.jpg",
+      "img": "https://i.ibb.co/MhnXcv4/8.jpg",
       "description": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe.",
       "cost": "6 USD entrance fee",
       "time": "April to May, September to October"
@@ -21,7 +21,7 @@
       "id": 3,
       "spotName": "Petronas Twin Towers",
       "country": "Malaysia",
-      "img": "https://example.com/images/petronas-twin-towers.jpg",
+      "img": "https://i.ibb.co/sqZKqNk/9.jpg",
       "description": "Located in the heart of Kuala Lumpur, the Petronas Twin Towers are the tallest twin towers in the world. They are a major architectural feat and a popular spot for both tourists and locals, offering an impressive sky bridge and observation deck.",
       "cost": "20 USD for adult foreign visitors",
       "time": "Year-round"
@@ -30,7 +30,7 @@
       "id": 4,
       "spotName": "Borobudur Temple",
       "country": "Indonesia",
-      "img": "https://example.com/images/borobudur.jpg",
+      "img": "https://i.ibb.co/hFYZkBh/10.jpg",
       "description": "This 9th-century Mahayana Buddhist temple in Magelang, Central Java, is the world's largest Buddhist temple. The temple is decorated with 504 Buddha statues and 2,672 relief panels. Borobudur is considered one of the greatest Buddhist sites in the world.",
       "cost": "25 USD for foreign tourists",
       "time": "April to October"
@@ -39,7 +39,7 @@
       "id": 5,
       "spotName": "Mount Fuji",
       "country": "Japan",
-      "img": "https://example.com/images/mount-fuji.jpg",
+      "img": "https://i.ibb.co/wYNbSmW/11.jpg",
       "description": "Mount Fuji is Japan's tallest mountain and a historic site intertwined with Japanese culture. It's an active stratovolcano that last erupted in 1707–1708. The mountain is just over 100 kilometers southwest of Tokyo and is visible from there on clear days.",
       "cost": "Free to view, approximately 100 USD for climbing permits and guide fees",
       "time": "July to early September"
@@ -48,7 +48,7 @@
       "id": 6,
       "spotName": "Angkor Wat",
       "country": "Cambodia",
-      "img": "https://example.com/images/angkor-wat.jpg",
+      "img": "https://i.ibb.co/yhbKkhk/12.jpg",
       "description": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world, on a site measuring 162.6 hectares. Originally constructed as a Hindu temple dedicated to the god Vishnu for the Khmer Empire, it was gradually transformed into a Buddhist temple toward the end of the 12th century.",
       "cost": "37 USD for a one-day pass",
       "time": "November to February"
