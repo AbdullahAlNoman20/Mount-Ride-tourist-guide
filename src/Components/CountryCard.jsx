@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const CountryCard = ({ countryCard }) => {
-  const { countryName, spotName, img, description, cost, time } = countryCard;
+  const { id, countryName, spotName, img, description, cost, time } = countryCard;
 
   return (
     
@@ -23,9 +23,11 @@ const CountryCard = ({ countryCard }) => {
                 </span>{" "}
               </a>
             </div>
-            <a rel="noopener noreferrer" href="#">
+            <NavLink to={`/countryDetails/${id}`}>
+            <a rel="noopener noreferrer">
               See All
             </a>
+            </NavLink>
           </div>
           <div className="space-y-4">
             <div className="space-y-2">

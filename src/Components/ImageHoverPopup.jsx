@@ -1,10 +1,18 @@
 import { useContext, useState } from "react";
 import "./ImageHoverPopup.css";
 import { AuthContext } from "./Providers/AuthProviders";
+import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const ImageHoverPopup = () => {
-  const { user } = useContext(AuthContext);
+
+  const { user, logOut } = useContext(AuthContext);
   // console.log(user);
+
+  const handleSignOut = () => {
+    logOut().then().catch();
+    toast.error("Attention. You are LOGOUT");
+  };
 
   const [isHovering, setIsHovering] = useState(false);
 
@@ -26,13 +34,22 @@ const ImageHoverPopup = () => {
         {isHovering && (
           <div className="popup">
             <div className=" font-bold mb-2">
-              {user && (
-                <p className="">{user.displayName}</p>
-              )|| <p>No Name</p>}
-            </div>
-
-            <div className="">
-              {user && <p className="underline ">{user.email}</p>}
+              {(user && (
+                <div className="">
+                  <p className="text-xl">{user.displayName}</p>
+                  <div className="text-center p-5">
+                    <NavLink to="/">
+                      <button
+                        onClick={handleSignOut}
+                        className="btn btn-outline btn-warning"
+                      >
+                        <i className="fa-solid fa-right-from-bracket"></i>{" "}
+                        Logout
+                      </button>
+                    </NavLink>
+                  </div>
+                </div>
+              )) || <p>No Name</p>}
             </div>
           </div>
         )}

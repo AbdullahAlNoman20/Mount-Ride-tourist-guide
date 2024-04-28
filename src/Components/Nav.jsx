@@ -7,13 +7,14 @@ import { AuthContext } from "./Providers/AuthProviders";
 import ImageHoverPopup from "./ImageHoverPopup";
 
 const Nav = () => {
+
   const { user, logOut } = useContext(AuthContext);
   // console.log(user);
 
-  const handleSignOut = () => {
-    logOut().then().catch();
-    toast.error("Attention. You are LOGOUT");
-  };
+  // const handleSignOut = () => {
+  //   logOut().then().catch();
+  //   toast.error("Attention. You are LOGOUT");
+  // };
 
   return (
     <div className="p-5 bg-yellow-800 text-white ">
@@ -135,7 +136,7 @@ const Nav = () => {
         </div>
 
         <div className="navbar-end ">
-          <div className=" hidden lg:block">
+          <div className=" ">
             {user?.email ? (
               <div className="relative flex-shrink-0 mr-5">
                 <ImageHoverPopup></ImageHoverPopup>
@@ -147,20 +148,28 @@ const Nav = () => {
             )}
           </div>
           {user ? (
-            <NavLink to="/">
-              <button
-                onClick={handleSignOut}
-                className="btn btn-outline btn-sm btn-warning"
-              >
-                <i className="fa-solid fa-right-from-bracket"></i> Logout
-              </button>
-            </NavLink>
+            <div className=""></div>
+            // <NavLink to="/">
+            //   <button
+            //     onClick={handleSignOut}
+            //     className="btn btn-outline btn-sm btn-warning"
+            //   >
+            //     <i className="fa-solid fa-right-from-bracket"></i> Logout
+            //   </button>
+            // </NavLink>
           ) : (
-            <NavLink to="/login">
-              <button className="btn btn-outline btn-sm btn-error">
+            <div className=" flex gap-5 ">
+              <NavLink to="/login">
+              <button className="btn btn-outline btn-warning hidden lg:block">
                 <i className="fa-solid fa-right-to-bracket"></i> Login
               </button>
             </NavLink>
+              <NavLink to="/register">
+              <button className="btn btn-outline btn-success ">
+                <i className="fa-solid fa-right-to-bracket"></i> Register
+              </button>
+            </NavLink>
+            </div>
           )}
         </div>
       </div>

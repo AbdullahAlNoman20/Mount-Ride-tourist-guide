@@ -26,6 +26,8 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import AddTouristSpot from './Components/AddTouristSpot';
 import MyList from './Components/MyList';
 import UpdateSpot from './Components/UpdateSpot';
+import CountryDetails from './Components/CountryDetails';
+import SpotDetails from './Components/SpotDetails';
 
 const router = createBrowserRouter([
   {
@@ -50,11 +52,16 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      // {
-      //   path: "/details/:id",
-      //   element: <ProtectedRoute><Details></Details></ProtectedRoute>,
-      //   loader: () => fetch("../Service.json")
-      // },
+      {
+        path: "/spotDetails/:id",
+        element: <ProtectedRoute><SpotDetails></SpotDetails></ProtectedRoute>,
+        loader: ()=>fetch('/Service.json')
+      },
+      {
+        path: "/countryDetails/:id",
+        element: <ProtectedRoute><CountryDetails></CountryDetails></ProtectedRoute>,
+        loader: ()=>fetch('/Country.json')
+      },
       {
         path: "/updateProfile",
         element: <ProtectedRoute><Profile></Profile></ProtectedRoute>,

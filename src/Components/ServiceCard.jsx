@@ -1,8 +1,9 @@
 
 import "animate.css";
+import { NavLink } from "react-router-dom";
 
 const ServiceCard = ({ serviceCard }) => {
-  const { country, spotName, img, description, cost, time } = serviceCard;
+  const { id,country, spotName, img, description, cost, time } = serviceCard;
 
   return (
     <div>
@@ -20,9 +21,12 @@ const ServiceCard = ({ serviceCard }) => {
         </div>
         <p className="dark:text-gray-800">{description}</p>
 
+        <NavLink to={`/spotDetails/${id}`}>
         <button className="btn btn-outline btn-success mt-5 w-full ">
           View Details
         </button>
+        </NavLink>
+        
       </div>
     </div>
   );

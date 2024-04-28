@@ -10,8 +10,8 @@
   
   .popup {
     position: absolute;
-    bottom: -100%; /* Adjust this to control the popup position */
-    left: 50%; /* Center the popup */
+    bottom: -250%; /* Adjust this to control the popup position */
+    left: -20%; /* Center the popup */
     transform: translateX(-50%);
     background-color: black;
     color: white;
