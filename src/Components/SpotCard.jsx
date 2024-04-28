@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
-const SpotCard = ({ spot,setSpots,spots }) => {
+const SpotCard = ({ spot, setSpots, spots }) => {
   const { _id, name, photo, country, location, description, cost, time } = spot;
 
   const handleDelete = (_id) => {
@@ -28,7 +28,7 @@ const SpotCard = ({ spot,setSpots,spots }) => {
                 text: "Your Spot has been deleted.",
                 icon: "success",
               });
-              const remaining = spots.filter(spt => spt._id !==_id)
+              const remaining = spots.filter((spt) => spt._id !== _id);
               setSpots(remaining);
             }
           });
@@ -38,7 +38,11 @@ const SpotCard = ({ spot,setSpots,spots }) => {
 
   return (
     <div>
-      <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
+      <div
+        className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800 lg:h-[750px]"
+        data-aos-duration="2000"
+        data-aos="zoom-in"
+      >
         <div className="flex space-x-4">
           <img
             alt=""
@@ -103,10 +107,7 @@ const SpotCard = ({ spot,setSpots,spots }) => {
         </div>
       </div>
 
-
-
-
- {/* <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 dark:bg-gray-50 dark:text-gray-800">
+      {/* <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 dark:bg-gray-50 dark:text-gray-800">
 	<h2 className="text-xl font-semibold">Your cart</h2>
 	<ul className="flex flex-col divide-y dark:divide-gray-300">
 		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
@@ -230,19 +231,6 @@ const SpotCard = ({ spot,setSpots,spots }) => {
 		</button>
 	</div>
 </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 };

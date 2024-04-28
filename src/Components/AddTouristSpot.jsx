@@ -70,7 +70,10 @@ const AddTouristSpot = () => {
           className="container flex flex-col mx-auto space-y-12 text-black"
         >
           <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50 text-black">
-            <div className="space-y-2 col-span-full lg:col-span-1">
+            <div className="space-y-2 col-span-full lg:col-span-1 border-r-8"
+            data-aos-duration="2000"
+            data-aos="fade-right"
+            >
               <p className="font-bold text-2xl">Add Your Tourist Spot</p>
               <p className="text-xs">
                 Got a favorite spot that’s a well-kept secret? Add it to Mount
@@ -79,7 +82,10 @@ const AddTouristSpot = () => {
                 destination for adventurers worldwide!
               </p>
             </div>
-            <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black">
+            <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black"
+            data-aos-duration="2500"
+            data-aos="fade-left"
+            >
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">
                   Your Name
