@@ -4,24 +4,25 @@ import Service from "./Service";
 import Countries from "./Countries";
 
 const Estates = () => {
-  
-
   return (
     <div className="bg-yellow-800 text-white lg:p-5 pb-5">
       <div className="flex justify-center items-center flex-col p-14">
         <h1 className="font-bold text-4xl animate__animated animate__bounce">
-          Our Services | Tourist Spots
+          Explore the Peaks of Wonder
         </h1>
         <p>
-          Check-In offers a premium selection of accommodations and dining
-          experiences. Whether it's a relaxing stay at our hotels, a cozy night
-          in our guesthouses, or a memorable meal at our restaurants, we're here
-          to make your visit exceptional.
+          Dive into a world of adventure with Mount Ride’s handpicked collection
+          of iconic tourist spots across the globe. From the serene heights of
+          the Himalayas to the mystic ruins of ancient civilizations, each
+          destination promises more than just a visit—it offers an experience.
+          With our curated guides, stunning photography, and insightful tips,
+          you're not just planning a trip; you're embarking on a journey to
+          discover the heart and soul of the most breathtaking places on earth.
+          Gear up for adventure, cultural exploration, and unforgettable
+          memories with Mount Ride—where every journey is epic!
         </p>
       </div>
-      <div className="">
-        Data is Coming From Database
-      </div>
+      <div className="">Data is Coming From Database</div>
 
       {/* Extra Section 1 */}
       <div className="mt-5">
@@ -64,11 +65,19 @@ const Estates = () => {
             data-aos="fade-right"
           >
             <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-              Get in Touch with Mount Ride 
+              Get in Touch with Mount Ride
             </h2>
             <div className="dark:text-gray-600">
-              Reach out to us for any inquiries, reservations, or feedback -
-              we're here to ensure your journey is seamless and memorable.
+              At Mount Ride, your next great adventure is just a conversation
+              away. Whether you're dreaming of distant mountains or vibrant
+              cityscapes, our travel experts are here to guide you every step of
+              the way. Have questions, need personalized travel advice, or ready
+              to start planning your journey? Reach out to us! Use the form
+              below to send us a message, give us a call, or connect with us on
+              social media. We’re passionate about travel and even more excited
+              about helping you create unforgettable memories. Let's make your
+              travel dreams come true together. Contact us today—adventure
+              awaits!
             </div>
           </div>
           <img
@@ -121,7 +130,6 @@ const Estates = () => {
           </button>
         </form>
       </div>
-
     </div>
   );
 };

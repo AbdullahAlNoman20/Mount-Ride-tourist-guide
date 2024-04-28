@@ -84,7 +84,7 @@ const Nav = () => {
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            <i className="fa-solid fa-person-hiking text-yellow-500"></i> MOUNT
+            MOUNT
             <span className="text-yellow-500">R</span>IDE
           </a>
         </div>
@@ -135,7 +135,7 @@ const Nav = () => {
         </div>
 
         <div className="navbar-end ">
-          <div className="">
+          <div className=" hidden lg:block">
             {user?.email ? (
               <div className="relative flex-shrink-0 mr-5">
                 <ImageHoverPopup></ImageHoverPopup>

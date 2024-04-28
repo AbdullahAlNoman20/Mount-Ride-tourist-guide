@@ -7,11 +7,12 @@ const Footer = () => {
             <footer className="footer p-10 bg-yellow-800 text-white">
   <nav data-aos-duration="2000"
 data-aos="zoom-in">
-    <h6 className="footer-title">Services</h6> 
-    <a className="link link-hover">Restaurant</a>
-    <a className="link link-hover">Hotel</a>
-    <a className="link link-hover">Reassort</a>
-    <a className="link link-hover">Villa</a>
+    <h6 className="footer-title">Country</h6> 
+    <a className="link link-hover">Bangladesh</a>
+    <a className="link link-hover">Nepal</a>
+    <a className="link link-hover">China</a>
+    <a className="link link-hover">Thailand</a>
+    <a className="link link-hover">India</a>
   </nav> 
   <nav data-aos-duration="2000"
 data-aos="zoom-in">

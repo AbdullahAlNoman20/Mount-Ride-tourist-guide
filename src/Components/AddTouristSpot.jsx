@@ -1,8 +1,7 @@
+import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 
 const AddTouristSpot = () => {
-
-
   const handleAddSpot = (e) => {
     e.preventDefault();
 
@@ -60,6 +59,9 @@ const AddTouristSpot = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Mount Ride | Add Tourist Spot </title>
+      </Helmet>
       <section className="p-6 bg-yellow-800 text-black">
         <form
           onSubmit={handleAddSpot}
@@ -71,8 +73,10 @@ const AddTouristSpot = () => {
             <div className="space-y-2 col-span-full lg:col-span-1">
               <p className="font-bold text-2xl">Add Your Tourist Spot</p>
               <p className="text-xs">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci fuga autem eum!
+                Got a favorite spot that’s a well-kept secret? Add it to Mount
+                Ride’s collection and let fellow travelers discover the magic
+                you've found. Your recommendations could be the next must-visit
+                destination for adventurers worldwide!
               </p>
             </div>
             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black">
