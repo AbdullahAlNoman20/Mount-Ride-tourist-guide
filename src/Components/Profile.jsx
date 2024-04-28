@@ -41,7 +41,7 @@ const Profile = ({ children }) => {
               <p className="font-extrabold text-3xl animate__animated animate__bounce">
                 Profile
               </p>
-              <p>
+              <p className="text-justify p-5">
                 Manage your travel plans, explore personalized recommendations,
                 and keep track of your favorite destinations—all in one place.
                 Welcome to your Mount Ride profile!
@@ -99,7 +99,7 @@ const Profile = ({ children }) => {
                     className="w-10 h-10 dark:bg-gray-500 rounded-full dark:bg-gray-300"
                   />
                   <button type="submit" className="btn btn-outline btn-success">
-                    Save
+                    Save Updated Info 
                   </button>
                 </div>
               </div>

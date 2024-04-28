@@ -83,19 +83,24 @@ const UpdateSpot = () => {
           className="container flex flex-col mx-auto space-y-12 text-black"
         >
           <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50 text-black">
-            <div className="space-y-2 col-span-full lg:col-span-1 border-r-8"
-            data-aos-duration="2000"
-            data-aos="fade-right"
+            <div
+              className="space-y-2 col-span-full lg:col-span-1 border-r-8"
+              data-aos-duration="2000"
+              data-aos="fade-right"
             >
               <p className="font-bold text-2xl">Update Your Tourist Spot</p>
-              <p className="text-xs">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Adipisci fuga autem eum!
+              <p className="text-xs text-justify p-5">
+                Explore newly added destinations, updated attractions, and fresh
+                insights in our Update Spot section. From hidden gems to
+                trending hotspots, we keep you informed and inspired for your
+                next adventure in real-time. Don't miss out on the
+                excitement—check back often to see what's new!
               </p>
             </div>
-            <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black"
-            data-aos-duration="2500"
-            data-aos="fade-left"
+            <div
+              className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 text-black"
+              data-aos-duration="2500"
+              data-aos="fade-left"
             >
               <div className="col-span-full sm:col-span-3">
                 <label htmlFor="firstname" className="text-sm">

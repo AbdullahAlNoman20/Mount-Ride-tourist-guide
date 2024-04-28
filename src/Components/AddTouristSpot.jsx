@@ -75,7 +75,7 @@ const AddTouristSpot = () => {
             data-aos="fade-right"
             >
               <p className="font-bold text-2xl">Add Your Tourist Spot</p>
-              <p className="text-xs">
+              <p className="text-xs p-5 text-justify">
                 Got a favorite spot that’s a well-kept secret? Add it to Mount
                 Ride’s collection and let fellow travelers discover the magic
                 you've found. Your recommendations could be the next must-visit

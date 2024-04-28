@@ -15,7 +15,7 @@ const SpotDetails = () => {
     return (
         <div>
       <Helmet>
-        <title>Mount Ride | Country Details</title>
+        <title>Mount Ride | Spot Details Page</title>
       </Helmet>
       <section>
         <div className="dark:bg-yellow-700">

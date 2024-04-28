@@ -24,8 +24,8 @@ const CountryCard = ({ countryCard }) => {
               </a>
             </div>
             <NavLink to={`/countryDetails/${id}`}>
-            <a rel="noopener noreferrer">
-              See All
+            <a rel="noopener noreferrer ">
+              <span className="underline font-bold text-[15px] text-blue-600">See Details</span>
             </a>
             </NavLink>
           </div>
@@ -46,7 +46,7 @@ const CountryCard = ({ countryCard }) => {
                   {countryName}
                 </h3>
               </a>
-              <p className="leading-snug dark:text-gray-600">{description}</p>
+              <p className="leading-snug dark:text-gray-600 text-justify">{description}</p>
             </div>
           </div>
         </div>

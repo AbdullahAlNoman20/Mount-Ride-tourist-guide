@@ -18,7 +18,6 @@ import Error from "./Components/Error";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import About from "./Components/About";
-import Details from "./Components/Details";
 import { HelmetProvider } from "react-helmet-async";
 import AuthProviders from "./Components/Providers/AuthProviders";
 import Profile from "./Components/Profile";

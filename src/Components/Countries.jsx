@@ -13,9 +13,9 @@ const Countries = () => {
   return (
     <div>
       <h1 className="text-3xl text-center font-bold mt-10">
-        Discover Asia’s Treasures with Mount Ride: {country.length} country.
+       | Discover Asia’s Treasures with Mount Ride. |
       </h1>
-      <p className="text-center my-5">
+      <p className="text-center my-5 text-justify">
         Discover Asia’s Treasures with Mount RideEmbark on a spectacular voyage
         through Asia with Mount Ride as your guide. Explore the essence of each
         country through its most celebrated landmarks. From the tranquil temples

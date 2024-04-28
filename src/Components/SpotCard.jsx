@@ -67,7 +67,7 @@ const SpotCard = ({ spot, setSpots, spots }) => {
             className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500"
           />
           <h2 className="mb-1 text-xl font-semibold">{country}</h2>
-          <p className="text-sm dark:text-gray-600">{description}</p>
+          <p className="text-sm dark:text-gray-600 text-justify">{description}</p>
         </div>
         <div className="flex flex-wrap justify-between">
           {/* Button */}

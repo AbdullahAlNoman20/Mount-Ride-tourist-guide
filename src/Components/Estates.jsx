@@ -9,10 +9,10 @@ const Estates = () => {
   return (
     <div className="bg-yellow-800 text-white lg:p-5 pb-5">
       <div className="flex justify-center items-center flex-col p-14">
-        <h1 className="font-bold text-4xl animate__animated animate__bounce">
-          Explore the Peaks of Wonder
+        <h1 className="font-bold text-4xl animate__animated animate__bounce mb-5">
+         | Explore the Peaks of Wonder |
         </h1>
-        <p>
+        <p className="text-justify">
           Dive into a world of adventure with Mount Ride’s handpicked collection
           of iconic tourist spots across the globe. From the serene heights of
           the Himalayas to the mystic ruins of ancient civilizations, each
@@ -71,7 +71,7 @@ const Estates = () => {
             <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
               Get in Touch with Mount Ride
             </h2>
-            <div className="dark:text-gray-600">
+            <div className="dark:text-gray-600 text-justify">
               At Mount Ride, your next great adventure is just a conversation
               away. Whether you're dreaming of distant mountains or vibrant
               cityscapes, our travel experts are here to guide you every step of
@@ -100,7 +100,7 @@ const Estates = () => {
             <input
               id="name"
               type="text"
-              placeholder=""
+              placeholder="Abdullah Al Noman"
               className="border w-full p-3 rounded dark:bg-gray-100"
             />
           </div>
@@ -111,6 +111,7 @@ const Estates = () => {
             <input
               id="email"
               type="email"
+              placeholder="xyz@gmail.com"
               className="border w-full p-3 rounded dark:bg-gray-100"
             />
           </div>
@@ -121,6 +122,7 @@ const Estates = () => {
             <textarea
               id="message"
               rows="3"
+              placeholder="Say Something"
               className="border w-full p-3 rounded dark:bg-gray-100"
             ></textarea>
           </div>
