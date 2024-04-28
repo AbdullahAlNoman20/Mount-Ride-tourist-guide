@@ -40,6 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+        loader: ()=>fetch('http://127.0.0.1:5000/spot')
       },
       {
         path: "/login",

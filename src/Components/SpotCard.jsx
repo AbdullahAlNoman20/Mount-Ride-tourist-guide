@@ -93,7 +93,7 @@ const SpotCard = ({ spot,setSpots,spots }) => {
           <div className="flex space-x-2 text-sm dark:text-gray-600">
             <button type="button" className="flex items-center p-1 space-x-1.5">
               <i className="fa-solid fa-dollar-sign"></i>
-              <span>Around: {cost}$</span>
+              <span>Around: {cost} </span>
             </button>
             <button type="button" className="flex items-center p-1 space-x-1.5">
               <i className="fa-solid fa-calendar-days"></i>
