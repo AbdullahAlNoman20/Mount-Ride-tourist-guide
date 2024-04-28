@@ -1,58 +1,56 @@
 [
-    {
+  {
       "id": 1,
-      "image": "https://i.ibb.co/PZGczTj/p1.jpg",
-      "title": "Sunset View Luxury Hotel",
-      "description": "Nestled in the heart of Dhaka, the Sunset View offers an escape into luxury with panoramic city views, world-class amenities, and personalized services designed for the discerning traveler.",
-      "price": "150",
-      "location": "Dhaka, Bangladesh",
-      "booking_status": "Available",
-      "facility": ["Spa", "Infinity Pool", "Rooftop Dining", "24/7 Room Service"],
-      "rating": 4.8
-    },
-    {
+      "spotName": "Taj Mahal",
+      "country": "India",
+      "img": "https://example.com/images/taj-mahal.jpg",
+      "description": "An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.",
+      "cost": "25 USD for foreigners",
+      "time": "October to March"
+  },
+  {
       "id": 2,
-      "image": "https://i.ibb.co/h8KvPmV/p2.jpg",
-      "title": "Beachside Bungalow Resort",
-      "description": "Step into a world of tranquility and serene beauty at our Beachside Bungalow Resort, located on the pristine beaches of Cox's Bazar. Experience the perfect blend of nature and luxury.",
-      "price": "120",
-      "location": "Cox's Bazar, Bangladesh",
-      "booking_status": "Booked",
-      "facility": ["Private Beach", "Sea View Balconies", "Outdoor Pool", "Guided Tours"],
-      "rating": 4.5
-    },
-    {
+      "spotName": "Great Wall of China",
+      "country": "China",
+      "img": "https://example.com/images/great-wall-of-china.jpg",
+      "description": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe.",
+      "cost": "6 USD entrance fee",
+      "time": "April to May, September to October"
+  },
+  {
       "id": 3,
-      "image": "https://i.ibb.co/3WkYxxM/p3.jpg",
-      "title": "Heritage Guesthouse",
-      "description": "Discover the charm of Bangladeshi hospitality in our Heritage Guesthouse. Located in the historic district of Sylhet, this cozy retreat offers an intimate glimpse into the local culture and traditions.",
-      "price": "80",
-      "location": "Sylhet, Bangladesh",
-      "booking_status": "Available",
-      "facility": ["Cultural Tours", "Local Cuisine", "Garden", "Free Wi-Fi"],
-      "rating": 4.2
-    },
-    {
+      "spotName": "Petronas Twin Towers",
+      "country": "Malaysia",
+      "img": "https://example.com/images/petronas-twin-towers.jpg",
+      "description": "Located in the heart of Kuala Lumpur, the Petronas Twin Towers are the tallest twin towers in the world. They are a major architectural feat and a popular spot for both tourists and locals, offering an impressive sky bridge and observation deck.",
+      "cost": "20 USD for adult foreign visitors",
+      "time": "Year-round"
+  },
+  {
       "id": 4,
-      "image": "https://i.ibb.co/3M4xJtJ/p4.png",
-      "title": "Gourmet Paradise Restaurant",
-      "description": "A culinary journey through the flavors of Bangladesh awaits at Gourmet Paradise. Our chefs specialize in traditional and contemporary dishes that will tantalize your taste buds.",
-      "price": "50",
-      "location": "Chittagong, Bangladesh",
-      "booking_status": "Available",
-      "facility": ["Live Kitchen", "Private Dining", "Vegan Options", "Seafood Specialties"],
-      "rating": 4.7
-    },
-    {
+      "spotName": "Borobudur Temple",
+      "country": "Indonesia",
+      "img": "https://example.com/images/borobudur.jpg",
+      "description": "This 9th-century Mahayana Buddhist temple in Magelang, Central Java, is the world's largest Buddhist temple. The temple is decorated with 504 Buddha statues and 2,672 relief panels. Borobudur is considered one of the greatest Buddhist sites in the world.",
+      "cost": "25 USD for foreign tourists",
+      "time": "April to October"
+  },
+  {
       "id": 5,
-      "image": "https://i.ibb.co/HB8bvMP/p5.jpg",
-      "title": "Skyline Bistro",
-      "description": "Elevate your dining experience at Skyline Bistro, where the skyline of Dhaka meets culinary excellence. Enjoy our selection of international dishes with a local twist.",
-      "price": "60",
-      "location": "Dhaka, Bangladesh",
-      "booking_status": "Booked",
-      "facility": ["Rooftop Seating", "Cocktail Bar", "Weekend Brunch", "Live Music"],
-      "rating": 4.6
-    }
-  ]
-  
+      "spotName": "Mount Fuji",
+      "country": "Japan",
+      "img": "https://example.com/images/mount-fuji.jpg",
+      "description": "Mount Fuji is Japan's tallest mountain and a historic site intertwined with Japanese culture. It's an active stratovolcano that last erupted in 1707–1708. The mountain is just over 100 kilometers southwest of Tokyo and is visible from there on clear days.",
+      "cost": "Free to view, approximately 100 USD for climbing permits and guide fees",
+      "time": "July to early September"
+  },
+  {
+      "id": 6,
+      "spotName": "Angkor Wat",
+      "country": "Cambodia",
+      "img": "https://example.com/images/angkor-wat.jpg",
+      "description": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world, on a site measuring 162.6 hectares. Originally constructed as a Hindu temple dedicated to the god Vishnu for the Khmer Empire, it was gradually transformed into a Buddhist temple toward the end of the 12th century.",
+      "cost": "37 USD for a one-day pass",
+      "time": "November to February"
+  }
+]
