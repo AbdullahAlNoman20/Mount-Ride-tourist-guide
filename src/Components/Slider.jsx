@@ -6,7 +6,7 @@ import './Slider.css';
 
 const Slider = () => {
     return (
-        <div className="lg:pt-5 bg-yellow-800">
+        <div className="lg:pt-5">
 
       <Swiper spaceBetween={30}
         centeredSlides={true}

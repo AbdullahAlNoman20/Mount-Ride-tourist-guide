@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allTouristSpot",
-        element: <ProtectedRoute><About></About></ProtectedRoute>,
+        element: <About></About>,
         loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
       },
       {

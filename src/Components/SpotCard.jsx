@@ -4,37 +4,7 @@ import { Link } from "react-router-dom";
 const SpotCard = ({ spot, setSpots, spots }) => {
   const { _id, name, photo, country, location, description, cost, time } = spot;
 
-  const handleDelete = (_id) => {
-    console.log(_id);
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        fetch(`https://mountrideserver.vercel.app/spot/${_id}`, {
-          method: "DELETE",
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-            if (data.deletedCount > 0) {
-              Swal.fire({
-                title: "Deleted!",
-                text: "Your Spot has been deleted.",
-                icon: "success",
-              });
-              const remaining = spots.filter((spt) => spt._id !== _id);
-              setSpots(remaining);
-            }
-          });
-      }
-    });
-  };
+  
 
   return (
     <div>
@@ -71,31 +41,7 @@ const SpotCard = ({ spot, setSpots, spots }) => {
             {description}
           </p>
         </div>
-        <div className="flex flex-wrap justify-between">
-          {/* Button */}
-          <div className="space-x-2">
-            <Link to={`updateSpot/${_id}`}>
-              <button
-                aria-label="Share this post"
-                type="button"
-                className="p-2 text-center border"
-              >
-                <i className="fa-regular fa-pen-to-square"></i>
-                <span> Edit</span>
-              </button>
-            </Link>
-
-            <button
-              onClick={() => handleDelete(_id)}
-              aria-label="Bookmark this post"
-              type="button"
-              className="p-2 border"
-            >
-              <i className="fa-regular fa-trash-can"></i>
-              <span> Delete</span>
-            </button>
-          </div>
-
+        
           <div className="flex space-x-2 text-sm dark:text-gray-600">
             <button type="button" className="flex items-center p-1 space-x-1.5">
               <i className="fa-solid fa-dollar-sign"></i>
@@ -106,7 +52,7 @@ const SpotCard = ({ spot, setSpots, spots }) => {
               <span>{time}</span>
             </button>
           </div>
-        </div>
+        
       </div>
     </div>
   );

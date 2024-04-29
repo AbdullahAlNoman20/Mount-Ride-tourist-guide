@@ -7,7 +7,7 @@ const Estates = () => {
 
 
   return (
-    <div className="bg-yellow-800 text-white lg:p-5 pb-5">
+    <div className=" lg:p-5 pb-5">
       <div className="flex justify-center items-center flex-col p-14">
         <h1 className="font-bold text-4xl animate__animated animate__bounce mb-5">
          | Explore the Peaks of Wonder |
