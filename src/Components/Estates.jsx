@@ -42,7 +42,7 @@ const Estates = () => {
                 <br className="sm:hidden" /> 30% Off.
               </h2>
               <div className="space-x-2 text-center py-2 lg:py-0">
-                <span>Book for 1 person Get 1 person Free! Use code:</span>
+                <span>Book Now for 1 person Get 1 person Free! Use code:</span>
                 <span className="font-bold text-lg">MR24</span>
               </div>
               <a
