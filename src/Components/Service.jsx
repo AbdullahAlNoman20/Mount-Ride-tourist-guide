@@ -8,6 +8,7 @@ const Service = () => {
 
   useEffect(() => {
     fetch("Country.json")
+    // fetch("https://mountrideserver.vercel.app/service")
       .then((res) => res.json())
       .then((data) => setService(data));
   });

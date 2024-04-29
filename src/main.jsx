@@ -55,11 +55,13 @@ const router = createBrowserRouter([
         path: "/spotDetails/:id",
         element: <ProtectedRoute><SpotDetails></SpotDetails></ProtectedRoute>,
         loader: ()=>fetch('/Service.json')
+        // loader: ()=>fetch(`https://mountrideserver.vercel.app/service/${params.id}`)
       },
       {
         path: "/countryDetails/:id",
         element: <ProtectedRoute><CountryDetails></CountryDetails></ProtectedRoute>,
-        loader: ()=>fetch('/Country.json')
+        loader: ()=>fetch('/Country.json'),
+        // loader: ()=>fetch(`https://mountrideserver.vercel.app/country/${params.id}`)
       },
       {
         path: "/updateProfile",

@@ -6,6 +6,7 @@ const Countries = () => {
 
   useEffect(() => {
     fetch("Country.json")
+    // fetch("https://mountrideserver.vercel.app/country")
       .then((res) => res.json())
       .then((data) => setCountry(data));
   });
