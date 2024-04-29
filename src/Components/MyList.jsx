@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import SpotCard from "./SpotCard";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import SpotTable from "./SpotTable";
 
 const MyList = () => {
   const loadedSpots = useLoaderData();
@@ -25,16 +26,19 @@ const MyList = () => {
         now and let your wanderlust guide the way!
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="flex justify-center">
+      <div className="flex flex-col ">
         {spots.map((spot) => (
-          <SpotCard
+          <SpotTable
             key={spot._id}
             spot={spot}
             spots={spots}
             setSpots={setSpots}
-          ></SpotCard>
+          ></SpotTable>
         ))}
       </div>
+      </div>
+      
 
      
 
