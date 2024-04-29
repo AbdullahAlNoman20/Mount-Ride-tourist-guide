@@ -39,9 +39,9 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/about",
-        element: <About></About>,
-        loader: ()=>fetch('http://127.0.0.1:5000/spot')
+        path: "/allTouristSpot",
+        element: <ProtectedRoute><About></About></ProtectedRoute>,
+        loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
       },
       {
         path: "/login",
@@ -72,12 +72,12 @@ const router = createBrowserRouter([
       {
         path: "/myList",
         element: <ProtectedRoute><MyList></MyList></ProtectedRoute>,
-        loader: ()=>fetch('http://127.0.0.1:5000/spot')
+        loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
       },
       {
         path: '/myList/updateSpot/:id',
         element: <UpdateSpot></UpdateSpot>,
-        loader: ({params}) => fetch(`http://127.0.0.1:5000/spot/${params.id}`)
+        loader: ({params}) => fetch(`https://mountrideserver.vercel.app/spot/${params.id}`)
       }
     ],
   },

@@ -52,7 +52,7 @@ const UpdateSpot = () => {
 
     // Send Data to the server
 
-    fetch(`http://127.0.0.1:5000/spot/${_id}`, {
+    fetch(`https://mountrideserver.vercel.app/spot/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

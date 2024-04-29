@@ -36,7 +36,7 @@ const AddTouristSpot = () => {
 
     // Send Data to the server
 
-    fetch("http://127.0.0.1:5000/spot", {
+    fetch("https://mountrideserver.vercel.app/spot", {
       method: "POST",
       headers: {
         "content-type": "application/json",

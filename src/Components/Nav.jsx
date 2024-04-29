@@ -102,7 +102,7 @@ const Nav = () => {
                 </a>
               </li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/allTouristSpot">
               <li>
                 <a>
                   <i className="fa-solid fa-earth-asia"></i>All Tourist
