@@ -72,7 +72,7 @@ const Register = () => {
                 .then(resul=>{
                     
                     console.log(resul)
-                    toast.success("Welcome to Check-In");
+                    toast.success("Welcome to Mount Ride");
                     navigateHome("/");
 
                 })
